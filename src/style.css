@@ -1,0 +1,201 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: auto;
+    background-color: #244200;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 200 200'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='100' y1='33' x2='100' y2='-3'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='100' y1='135' x2='100' y2='97'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%231c3a00' fill-opacity='0.6'%3E%3Crect x='100' width='100' height='100'/%3E%3Crect y='100' width='100' height='100'/%3E%3C/g%3E%3Cg fill-opacity='0.5'%3E%3Cpolygon fill='url(%23a)' points='100 30 0 0 200 0'/%3E%3Cpolygon fill='url(%23b)' points='100 100 0 130 0 100 200 100 200 130'/%3E%3C/g%3E%3C/svg%3E");
+    /* background by SVGBackgrounds.com */
+    background-attachment: fixed;
+    overflow-x: hidden;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.info {
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    height: clamp(800px, 1035px, 2000px);
+    border: 5px solid gold;
+    border-radius: 20px;
+    
+}
+
+.headline {
+    font-style: italic;
+    color:brown;
+}
+
+.navItem {
+    color: red;
+    font-size: 2rem;
+}
+
+.navList {
+    width: 800px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.menu {
+    width : 1000px;
+    height : clamp(700px, 975px, 99vh);
+    background-color: #0a3894;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 3fr 1fr 3fr 1fr 3fr 1fr 3fr;
+    justify-items: center;
+    align-content: center;
+    gap: 15px;
+    margin: 10px;
+    padding: 20px;
+}
+.home {
+    width : 1000px;
+    height : clamp(700px, 975px, 99vh);
+    background-color: #0a3894;
+    display: flex;
+    flex-direction: column;
+    justify-content:baseline;
+    align-items: center;
+    gap: 15px;
+    margin: 10px;
+    padding: 20px;
+}
+.contact {
+    width : 1000px;
+    height : clamp(700px, 975px, 99vh);
+    background-color: #0a3894;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 10px;
+    padding: 20px;
+}
+
+.phoneContact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+}
+
+.phoneContactContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.whatsappImage {
+    content: url('./whatsapp-svgrepo-com.svg');
+}
+
+.details {
+    font-size: 1.4rem;
+    color:rgb(177, 177, 172);
+}
+
+.link {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color:rgb(177, 177, 172);
+}
+
+.telegramImage {
+    content: url('./telegram-svgrepo-com.svg');
+}
+
+.facebookImage {
+    content: url('./facebook-color-svgrepo-com.svg');
+}
+
+.instagramImage {
+    content: url('./instagram-1-svgrepo-com.svg');
+}
+
+.twitterImage {
+    content: url('./twitter-color-svgrepo-com.svg');
+}
+
+.namePlate {
+    font-size: 1.6rem;
+    color:rgb(177, 177, 172);
+}
+
+.imagePlate {
+    padding: 5px;
+    border: 3px groove gold;
+    margin: 15px;
+    background-color: rgb(102, 35, 35);
+}
+
+.descriptionPlate {
+    font-size: 1.4rem;
+    padding: 20px;
+    color:rgb(177, 177, 172);
+    background-color: rgb(102, 35, 35);
+    border-radius: 15%;
+    border: 3px groove gold;
+    margin: 15px;
+}
+
+.namePlate1 {
+    grid-column: 1/3;
+    grid-row: 1;
+}
+.imagePlate1 {
+    grid-column: 1;
+    grid-row: 2;
+    content: url('./milanesa.jpg');
+}
+
+.descriptionPlate1 {
+    grid-column: 2;
+    grid-row: 2;
+}
+.namePlate2 {
+    grid-column: 1/3;
+    grid-row: 3;
+}
+.imagePlate2 {
+    grid-column: 1;
+    grid-row: 4;
+    content: url('./empanadas.jpg');
+}
+.descriptionPlate2 {
+    grid-column: 2;
+    grid-row: 4;
+    font-size: 1.4rem;
+}
+
+.title {
+    font-size: 1.6rem;
+    color:rgb(177, 177, 172);
+}
+.text{
+    font-size: 1.4rem;
+    padding: 20px;
+    color:rgb(177, 177, 172);
+    background-color: rgb(102, 35, 35);
+    border-radius: 7px;
+    border: 3px groove gold;
+    margin: 15px;
+    font-style: oblique;
+}
+
+
+
